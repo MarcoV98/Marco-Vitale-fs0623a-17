@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+body {
+    font-family: 'Handlee', cursive;
+    font-size: 2rem;
+    
+}
+
+#postitWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: grey;
+}
+
+.postit {
+    background: linear-gradient(to bottom, lightyellow 0%, lightyellow 70%, lightgrey 100%);
+    margin: 1rem;
+    width: 23rem;
+    height: 18rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-style: italic;
+}
+
+.postit p:first-child {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.postit:nth-child(2), .postit:nth-child(4), .postit:nth-child(8) {
+    background: linear-gradient(to bottom, lightgreen 0%, lightgreen 70%, lightgrey 100%);
+}
+
+.postit:nth-child(3), .postit:nth-child(6) {
+    background: linear-gradient(to bottom, pink 0%, pink 70%, lightgrey 100%);
+}
+
+.postit:nth-child(1) {
+    transform: translate(0px, 18px) rotate(-6deg);
+    margin-bottom: 5rem;
+}
+
+.postit:nth-child(2) {
+    transform: translate(6px, 22px) rotate(5deg);
+}
+
+.postit:nth-child(3) {
+    transform: translate(12px, 19px) rotate(-5deg);
+}
+
+.postit:nth-child(4) {
+    transform: translate(28px, 16px) rotate(6deg);
+}
+
+.postit:nth-child(5) {
+    transform: translate(0px, 18px) rotate(-6deg);
+    margin-bottom: 6rem;
+}
+
+.postit:nth-child(6) {
+    transform: translate(10px, 9px) rotate(-7deg);
+}
+
+.postit:nth-child(7) {
+    transform: translate(15px, 19px) rotate(-3deg);
+    margin-bottom: 6rem;
+}
+
+.postit:nth-child(8) {
+    transform: translate(26px, 22px) rotate(5deg);
+}
+
+.postit:hover {
+    transform: scale(1.1) rotate(0deg);
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0)
+}
